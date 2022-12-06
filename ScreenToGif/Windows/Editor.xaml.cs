@@ -809,9 +809,9 @@ namespace ScreenToGif.Windows
                 AddExtension = true,
                 CheckFileExists = true,
                 Title = LocalizationHelper.Get("S.Editor.File.OpenMedia"),
-                Filter = $"{LocalizationHelper.Get("S.Editor.File.All")} (*.apng, *.avi, *.bmp, *.gif, *.jpg, *.jpeg, *.mkv, *.mp4, *.png, *.webp, *.webm, *.wmv)|*.apng;*.avi;*.bmp;*.gif;*.jpg;*.jpeg;*.mkv;*.mp4;*.png;*.webp;*.webm;*.wmv|" +
+                Filter = $"{LocalizationHelper.Get("S.Editor.File.All")} (*.apng, *.avi, *.bmp, *.gif, *.jpg, *.jpeg, *.mkv, *.mp4, *.ts, *.png, *.webp, *.webm, *.wmv)|*.apng;*.avi;*.bmp;*.gif;*.jpg;*.jpeg;*.mkv;*.mp4;*.ts;*.png;*.webp;*.webm;*.wmv|" +
                          $"{LocalizationHelper.Get("S.Editor.File.Image")} (*.apng, *.bmp, *.gif, *.jpg, *.jpeg, *.png)|*.apng;*.bmp;*.gif;*.jpg;*.jpeg;*.png|" +
-                         $"{LocalizationHelper.Get("S.Editor.File.Video")} (*.avi, *.mkv, *.mp4, *.webp, *.webm, *.wmv)|*.avi;*.mkv;*.mp4;*.webp;*.webm;*.wmv",
+                         $"{LocalizationHelper.Get("S.Editor.File.Video")} (*.avi, *.mkv, *.mp4, *.ts, *.webp, *.webm, *.wmv)|*.avi;*.mkv;*.mp4;*.ts;*.webp;*.webm;*.wmv",
             };
 
             var result = ofd.ShowDialog();
@@ -925,9 +925,9 @@ namespace ScreenToGif.Windows
                 AddExtension = true,
                 CheckFileExists = true,
                 Title = LocalizationHelper.Get("S.Editor.File.OpenMediaProject"),
-                Filter = $"{LocalizationHelper.Get("S.Editor.File.All")} (*.apng, *.avi, *.bmp, *.gif, *.jpg, *.jpeg, *.mkv, *.mp4, *.png, *.stg, *.webp, *.webm, *.wmv, *.zip)|*.apng;*.avi;*.bmp;*.gif;*.jpg;*.jpeg;*.mkv;*.mp4;*.png;*.stg;*.webp;*.webm;*.wmv;*.zip|" +
+                Filter = $"{LocalizationHelper.Get("S.Editor.File.All")} (*.apng, *.avi, *.bmp, *.gif, *.jpg, *.jpeg, *.mkv, *.mp4, *.ts, *.png, *.stg, *.webp, *.webm, *.wmv, *.zip)|*.apng;*.avi;*.bmp;*.gif;*.jpg;*.jpeg;*.mkv;*.mp4;*.ts;*.png;*.stg;*.webp;*.webm;*.wmv;*.zip|" +
                          $"{LocalizationHelper.Get("S.Editor.File.Image")} (*.apng, *.bmp, *.gif, *.jpg, *.jpeg, *.png)|*.apng;*.bmp;*.gif;*.jpg;*.jpeg;*.png|" +
-                         $"{LocalizationHelper.Get("S.Editor.File.Video")} (*.avi, *.mkv, *.mp4, *.webp, *.webm, *.wmv)|*.avi;*.mkv;*.mp4;*.webp;*.webm;*.wmv|" +
+                         $"{LocalizationHelper.Get("S.Editor.File.Video")} (*.avi, *.mkv, *.mp4, *.ts, *.webp, *.webm, *.wmv)|*.avi;*.mkv;*.mp4;*.ts;*.webp;*.webm;*.wmv|" +
                          $"{LocalizationHelper.Get("S.Editor.File.Project")} (*.stg, *.zip) |*.stg;*.zip",
             };
 
@@ -3799,6 +3799,7 @@ namespace ScreenToGif.Windows
                     case "avi":
                     case "mkv":
                     case "mp4":
+                    case "ts":
                     case "wmv":
                     case "webp":
                     case "webm":
