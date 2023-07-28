@@ -18,6 +18,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 using KGySoft.Drawing.Imaging;
+using KGySoft.Threading;
 
 using ScreenToGif.Cloud;
 using ScreenToGif.Controls;
@@ -1393,6 +1394,13 @@ internal class EncodingManager
             concat.AppendLine("duration " + (frame.Delay / 1000d).ToString(CultureInfo.InvariantCulture));
         }
 
+        if (preset.Type != ExportFormats.Gif && preset.Type != ExportFormats.Apng && preset.Type != ExportFormats.Webp)
+        {
+            //Fix for last frame.
+            concat.AppendLine("file '" + listFrames.LastOrDefault()?.Path + "'");
+            concat.AppendLine("duration 0");
+        }
+        
         var concatPath = Path.GetDirectoryName(listFrames[0].Path) ?? Path.GetTempPath();
         var concatFile = Path.Combine(concatPath, "concat.txt");
 

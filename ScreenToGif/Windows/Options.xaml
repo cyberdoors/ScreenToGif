@@ -1177,7 +1177,7 @@
                             <n:ExtendedListBoxItem Image="{StaticResource Flag.Italy}" Tag="it" Content="Italian / Italiano" Author="HispidaBytes, Michele Locati, Giovanni Rinaldin"
                                                    ContentWidth="25" ContentHeight="25" IsSelected="{Binding LanguageCode, ConverterParameter=it, Converter={StaticResource TagToSelection}}"/>
 
-                            <n:ExtendedListBoxItem Image="{StaticResource Flag.Japan}" Tag="ja" Content="Japanese / 日本語" Author="Tokinori Shimodaira, Seaeees, oxosi, Toshio, Winston, Chihiro Watanabe"
+                            <n:ExtendedListBoxItem Image="{StaticResource Flag.Japan}" Tag="ja" Content="Japanese / 日本語" Author="Kevin dela Cruz, Tokinori Shimodaira, Seaeees, oxosi, Toshio, Winston, Chihiro Watanabe"
                                                    ContentWidth="25" ContentHeight="25" IsSelected="{Binding LanguageCode, ConverterParameter=ja, Converter={StaticResource TagToSelection}}"/>
 
                             <n:ExtendedListBoxItem Image="{StaticResource Flag.SouthKorea}" Tag="ko" Content="Korean / 한국어" Author="hoho, Manbok, Lytie"
@@ -1192,7 +1192,7 @@
                             <n:ExtendedListBoxItem Image="{StaticResource Flag.Portugal}" Tag="pt-PT" Content="Portuguese (Portugal) / Português (Portugal)" Author="Duarte Ramos" 
                                                    ContentWidth="25" ContentHeight="25" IsSelected="{Binding LanguageCode, ConverterParameter=pt-PT, Converter={StaticResource TagToSelection}}"/>
 
-                            <n:ExtendedListBoxItem Image="{StaticResource Flag.Turkey}" Tag="tr" Content="Turkish / Türkçe" Author="Volkan Dağdelen, seferciogluecce, Omer Mollamehmetoglu, Bekir"
+                            <n:ExtendedListBoxItem Image="{StaticResource Flag.Turkey}" Tag="tr" Content="Turkish / Türkçe" Author="g-u-r-k-a-n, Volkan Dağdelen, seferciogluecce, Omer Mollamehmetoglu, Bekir"
                                                    ContentWidth="25" ContentHeight="25" IsSelected="{Binding LanguageCode, ConverterParameter=tr, Converter={StaticResource TagToSelection}}"/>
 
                             <n:ExtendedListBoxItem Image="{StaticResource Flag.Argentina}" Tag="es-AR" Content="Spanish (Argentina) / Español (Argentina)" Author="KNTRO (kntro@msn.com)"
@@ -1978,9 +1978,9 @@
                             <Label Grid.Row="0" Grid.Column="0" Content="Visual Studio:" FontSize="12" VerticalContentAlignment="Center" Margin="15,0,0,0" Foreground="{DynamicResource Element.Foreground}"/>
 
                             <Label Grid.Row="0" Grid.Column="1" FontSize="12" HorizontalAlignment="Left" Cursor="Hand" Padding="3,5">
-                                <Hyperlink NavigateUri="http://visualstudio.com/" ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=NavigateUri}" 
+                                <Hyperlink NavigateUri="https://visualstudio.microsoft.com/" ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=NavigateUri}" 
                                            RequestNavigate="Hyperlink_OnRequestNavigate">
-                                    visualstudio.com
+                                    visualstudio.microsoft.com
                                 </Hyperlink>
                             </Label>
 

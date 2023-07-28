@@ -6,11 +6,11 @@
     <Nullable>disable</Nullable>
     <DebugType>embedded</DebugType>
     <Platforms>AnyCPU;ARM64;x64;x86</Platforms>
-    <Version>2.37.0</Version>
+    <Version>2.38.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="KGySoft.Drawing" Version="6.3.2" />
+    <PackageReference Include="KGySoft.Drawing.Core" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
